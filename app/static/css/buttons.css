@@ -1,0 +1,27 @@
+:root {
+    --main-bg-color: gray;
+    --main-color: white;
+    --shadow-color: rgba(90, 70, 80, 0.5);
+    --transition-time: 0.2s;
+    --border-radius: 3px;
+}
+
+.button {
+    display: flex;
+    width: 100px;
+    height: 50px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    transition: background-color var(--transition-time), color var(--transition-time), transform var(--transition-time);
+    box-shadow: 0 2px 25px var(--shadow-color);
+}
+
+.button:hover {
+    background-color: var(--main-color);
+    color: var(--main-bg-color);
+    transform: translateY(2px);
+}
